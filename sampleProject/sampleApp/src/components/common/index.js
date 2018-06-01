@@ -5,3 +5,4 @@ export * from './CardSection.js';
 export * from './Input.js';
 export * from './Spinner.js';
 export * from './CopyRightSection.js';
+export * from './LoginSignUpButton';

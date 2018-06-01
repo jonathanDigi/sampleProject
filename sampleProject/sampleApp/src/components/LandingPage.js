@@ -1,12 +1,15 @@
 import React from 'react';
-import { View, Text } from 'react-native';
-import { CardSection, Card } from './common';
+import { View, Text, Image } from 'react-native';
+import { CardSection, Card, LoginSignUpButton } from './common';
+import { DIGILOCKLOGO } from './Images';
+
 
 const LandingPage = () => (
 	<Card>
 		<CardSection style={{ marginTop: 210 }}>
 			<View>
-				<Text style={Styles.textStyle}> Digilock </Text>
+      <Image style={{ width: 300, height: 55 }}source={DIGILOCKLOGO} />
+
 			</View>
 		</CardSection>
 
@@ -17,8 +20,14 @@ const LandingPage = () => (
 		</CardSection>
 
 		<CardSection style={{ position: 'absolute', bottom: 0, left: 0, right: 0 }}>
-			<Text style={Styles.CopyrightStyle}>Copyright 2018 Digilock by Security People Inc. </Text>
+			<Text style={Styles.CopyrightStyle}>©Copyright 2018 Digilock by Security People Inc. </Text>
 		</CardSection>
+
+    <CardSection style={{ position: 'absolute', bottom: 170, left: 0, right: 0 }}>
+    <LoginSignUpButton>
+      Login
+    </LoginSignUpButton>
+    </CardSection>
 	</Card>
 );
 
